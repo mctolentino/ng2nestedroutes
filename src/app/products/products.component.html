@@ -1,9 +1,14 @@
 <p>
-  products works!
+  Products
 </p>
-<a [routerLink]="['./main']">Main</a> |
-<a [routerLink]="['./interest']">Interest</a> |
-<a [routerLink]="['./sportify']">Sportify</a> |
+
+<div>
+  <a [routerLink]="['./main']">Main</a> |
+  <a [routerLink]="['./interest']">Interest</a> |
+  <a [routerLink]="['./sportify']">Sportify</a> |
+  Enter id: <input #id size="6">
+  <button (click)="goToProduct(id.value)">Go</button>
+</div>
 
 <div class="products-area">
   <router-outlet></router-outlet>
