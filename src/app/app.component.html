@@ -1,3 +1,9 @@
 <h1>
-  {{title}}
+  Parent Component
 </h1>
+
+<a [routerLink]="['home']">Home</a> |
+<a [routerLink]="['products']">Products</a> |
+<hr>
+
+<router-outlet></router-outlet>
